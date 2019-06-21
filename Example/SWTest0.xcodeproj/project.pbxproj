@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		03060C8C6D1970E75B8D04B9 /* Pods_SWTest0_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWTest0_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0412BEFBBF80E6E1652FD19D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0412BEFBBF80E6E1652FD19D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		088396ABBBC1EBC7061DED1B /* Pods-SWTest0_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWTest0_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SWTest0_Tests/Pods-SWTest0_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SWTest0_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWTest0_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,8 +42,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7DD50B55D629A51B1FF3FC3B /* Pods_SWTest0_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWTest0_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A57492E2B4DBD493C570559B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		AB26384C5CF4BA59C1FA87C2 /* SWTest0.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SWTest0.podspec; path = ../SWTest0.podspec; sourceTree = "<group>"; };
+		A57492E2B4DBD493C570559B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AB26384C5CF4BA59C1FA87C2 /* SWTest0.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SWTest0.podspec; path = ../SWTest0.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B35BF1C5F2ADA32A9A0C0E60 /* Pods-SWTest0_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWTest0_Tests.release.xcconfig"; path = "Target Support Files/Pods-SWTest0_Tests/Pods-SWTest0_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C1FA6BB657F84FF546559329 /* Pods-SWTest0_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWTest0_Example.release.xcconfig"; path = "Target Support Files/Pods-SWTest0_Example/Pods-SWTest0_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C33C3CCB8A3CBDB5070F338B /* Pods-SWTest0_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWTest0_Example.debug.xcconfig"; path = "Target Support Files/Pods-SWTest0_Example/Pods-SWTest0_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 				088396ABBBC1EBC7061DED1B /* Pods-SWTest0_Tests.debug.xcconfig */,
 				B35BF1C5F2ADA32A9A0C0E60 /* Pods-SWTest0_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -269,11 +269,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SWTest0_Example/Pods-SWTest0_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SWTest0/SWTest0.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWTest0.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
